@@ -29,7 +29,7 @@ setInterval(function(){
     if(counter > 4){
         counter = 1;
     } 
-}, 5000);
+}, 3000);
 
 
 // Menus of Home and Kitchen
