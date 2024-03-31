@@ -1,5 +1,4 @@
 
-
 // Countdown Date
 var countDownDate = new Date("March 1, 2024 9:56:26").getTime();
 
@@ -19,6 +18,10 @@ var x = setInterval(() => {
     document.getElementById("seconds").innerHTML = seconds;
 
 }, 1000);
+
+
+
+
 
 
 // automatic image
