@@ -18,6 +18,8 @@
     <!-- Bootstrap Icon Link -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Link Vue Js-->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 
 <body>
@@ -90,12 +92,12 @@
                 </div>
                 <!-- End of Search Box -->
                 <!-- Icon -->
-                <div class="icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <span>0</span>
+                <div class="icon" id="app">
+                    <i v-on:click="countHeart++" class="fa-regular fa-heart"></i>
+                    <span>{{countHeart}}</span>
                     <p>|</p>
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <span>2</span>
+                    <i @click="countAddCart++" class="fa-solid fa-cart-shopping"></i>
+                    <span>{{countAddCart}}</span>
                     <!-- My Cart -->
                     <div class="my-cart">
                         <p>My Cart</p>

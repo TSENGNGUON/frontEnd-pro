@@ -1,4 +1,14 @@
+// Vue Js Code
+const app = Vue.createApp({
+    data(){
+        return{
+            countHeart: 0,
+            countAddCart:0,
+        }
+    }
+})
 
+app.mount("#app");
 // Countdown Date
 var countDownDate = new Date("March 1, 2024 9:56:26").getTime();
 
