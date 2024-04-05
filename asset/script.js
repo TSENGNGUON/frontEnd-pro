@@ -22,7 +22,6 @@ window.onclick = function(e){
     e.target.id == "span" && 
     e.target.id == "icon"){
         list.classList.remove('show');
-
         icon.style.rotate = "0deg";
     }
 }
