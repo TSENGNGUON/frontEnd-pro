@@ -33,6 +33,7 @@ body {
     width: 100%;
 }
 
+
 /* Header Section */
 .header-section {
     width: 100%;
@@ -159,7 +160,7 @@ body {
     max-height: 0;
     overflow: hidden;
     border-radius: 15px;
-    background-color: var(--orange);
+    background-color: rgb(235, 168, 42,0.9);
     box-shadow: var(--shadow);
     z-index: 9999;
     transition: all .2s ease;
@@ -365,6 +366,58 @@ body {
     list-style-type: none;
 }
 
+/* shop icon */
+
+#shop_chevron.active{
+    transform: rotate(-180deg);
+    transition: all .5s ease;
+}
+#page_chevron.active{
+    transform: rotate(-180deg);
+    transition: all .5s ease;
+
+}
+/* sub menu of shop*/
+.navbar-section .content-navbar .menubar li.page a{
+    padding: 10px 50px 10px 10px;
+}
+.navbar-section .content-navbar .menubar li.shop a{
+    padding: 10px 50px 10px 10px;
+}
+.dropdown-click_shop{
+    position: absolute;
+    width: 179px;
+    background-color: rgba(2, 62, 138,0.9);
+    display: none;
+    transition: all .5s ease;
+}
+
+.dropdown-click_shop li:hover a{
+background-color:rgba(109, 18, 236, 0.9);
+}
+.dropdown-click_page li:hover a{
+background-color:rgba(109, 18, 236, 0.9);
+}
+
+.dropdown-click_shop.active{
+    display: block;
+}
+
+
+.dropdown-click_page{
+    position: absolute;
+    width: 136px;
+    background-color: rgba(2, 62, 138,0.9);
+    display: none;
+    transition: all .5s ease;
+}
+
+.dropdown-click_page.active{
+    display: block;
+}
+
+
+
 /* Dropdwon page */
 .navbar-section .content-navbar .menubar .main-dropdown-page {
     position: relative;
@@ -391,17 +444,30 @@ body {
 }
 
 .navbar-section .content-navbar .menubar li a {
+    width: 100%;
     position: relative;
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
-    padding: 10px 10px;
+    padding: 10px 15px;
     display: flex;
+    display: block;
+    width: 100%;
     flex-direction: row;
-    padding: 10px;
     border-bottom: 5px solid transparent;
-    justify-content: flex-start;
 }
+
+.navbar-section .content-navbar .menubar li a i{
+    margin-left: 45px;
+}
+
+
+
+
+.navbar-section .content-navbar .menubar li a i{
+    font-size: 15px;
+}
+
 
 /* Dropdown Menu */
 .navbar-section .content-navbar .menubar .main-dropdown .dropdown-menu {
@@ -413,7 +479,7 @@ body {
 .navbar-section .content-navbar .menubar .main-dropdown:hover .dropdown-menu {
     display: block;
     background-color: rgb(2, 62, 138);
-    font-size: 14px;
+    font-size: 1rem;
 }
 
 .navbar-section .content-navbar .menubar .main-dropdown .dropdown-menu a {
@@ -429,7 +495,7 @@ body {
     content: '';
     width: 100%;
     border-bottom: 5px solid #ffd60a;
-
+    justify-content: flex-start;
 }
 
 .navbar-section .content-navbar .menubar li a:hover span {
@@ -475,6 +541,7 @@ body {
     width: 25%;
     height: 645px;
     background-color: #ffffff;
+    transition: all .5s;
 }
 
 /* Toggle Menu */
@@ -509,10 +576,9 @@ body {
     display: flex;
     align-items: center;
     padding: 15.8px 10px;
-    transition:
-        all .5s;
     color: #535353;
 }
+
 
 .content-section .main-content .content-left .list-categories li a span:hover {
     text-decoration: underline;
@@ -2896,6 +2962,7 @@ body {
 .phone-tablet-section .phone-content-tablet .product-content .menu-brand-elec .chevron .chevron-right-elec-r.active {
     background-color: skyblue;
 }
+
 
 
 /* Responsive */

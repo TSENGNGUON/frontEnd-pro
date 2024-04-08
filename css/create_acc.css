@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#EBA958,#EA7357);
+}
+
+.container .photo{
+    position: absolute;
+    right: 50px;
+    bottom: 30px;
+}
+.container .photo2{
+    position: absolute;
+    left: 30px;
+    top: 80px;
+}
+
+.container .photo img{
+    width: 400px;
+}
+
+.modal_create_accc{
+    width: 450px;
+    height: 500px;
+    background-color: #fff;
+    padding: 30px;
+}
+
+.modal_create_accc .modal_header{
+    color: #fbb506;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.modal_create_accc .modal_footer{
+    width: 100%;
+    padding-top: 45px;
+}
+.modal_create_accc .modal_footer .btn{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+
+
+
+.btn .btn_box a{
+    width: 100%;
+    text-decoration: none;
+    padding: 10px 60px;
+    font-size: 14px;
+    font-family: sans-serif;
+    border-radius: 50px;
+}
+
+.btn .sign_up a{
+    background-image: linear-gradient(0.25turn ,#EBA958,#EA7357);
+    color: #fff;
+}
+.btn .sign_in a{
+    background-color: #F4F8F7;
+    color: #B7BBBA;
+}
+
+.modal_header p{
+    font-size: 30px;
+    font-weight: bolder;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+.modal_content div {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.modal_content div i{
+    position: absolute;
+    bottom: 18px;
+    right: 367px;
+    color: #878686;
+}
+
+.modal_content div input{
+    height: 50px;
+    padding-left: 30px;
+    border: 0;
+    outline: 0;
+    background-color: #F4F9F7;
+    border-radius: 3px;
+}
+

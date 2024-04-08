@@ -23,6 +23,7 @@
 </head>
 
 <body>
+    
     <!-- Container -->
     <div class="container">
         <!-- Header Section -->
@@ -58,13 +59,13 @@
                 <div class="header-right">
                     <!-- Sign In -->
                     <div class="sign-in">
-                        <a href="sign_in.html">Sign In</a>
+                        <a href="sign_in.html" target="_blank">Sign In</a>
                     </div>
                     <!-- End of Sign In -->
                     <p class="straight-line">|</p>
                     <!-- Create Acc -->
                     <div class="create-acc">
-                        <a href="#">Create an Account</a>
+                        <a href="create_an_account.html" target="_blank">Create an Account</a>
                     </div>
                     <!-- End of Create Acc -->
                 </div>
@@ -162,31 +163,51 @@
             <div class="content-navbar">
                 <!-- Menubar -->
                 <ul class="menubar">
-                    <li><a class="active" href="#">
+                    <li class="menu_items"><a class="active" href="#">
                             HOME
                         </a>
                     </li>
-                    <li class="main-dropdown"><a class="dropdown-shop" href="#">SHOPS <span><i
-                                    class="fa-solid fa-chevron-down"></i></span></a>
-                        <div class="dropdown-menu">
-                            <a href="#">Food</a>
-                            <a href="#">Supplies</a>
-                            <a href="#">Treats</a>
-                            <a href="#">Component</a>
-                        </div>
+                    <li class="shop menu_items"   
+                    id="shop_li"
+                    class="main-dropdown"><a class="dropdown-shop" href="#">SHOPS<i id="shop_chevron"
+                        class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-click_shop">
+                            <li class="dropdown-items">
+                                <a href="#">Fashsions</a>
+                            </li>
+                            <li class="dropdown-items">
+                                <a href="#">Electronics</a>
+                            </li>
+                            <li class="dropdown-items">
+                                <a href="#">Beauty</a>
+                            </li>
+                            <li class="dropdown-items">
+                                <a href="#">Products</a>
+                            </li>
+                        </ul>
                     </li>
-                    <li class="main-dropdown-page"><a href="#">PAGE <span><i
-                                    class="fa-solid fa-chevron-down"></i></span></a>
-                        <div class="menu-dropdown-page">
-                            <a href="#">Payment</a>
-                            <a href="#">Promotion</a>
-                            <a href="#">New Product</a>
-                        </div>
-
+                    <li class="menu_items"
+                    id="page_li"
+                    class="main-dropdown-page page"><a href="#">PAGE<i id="page_chevron"
+                                    class="fa-solid fa-chevron-down"></i></a>
+                                    <ul class="dropdown-click_page">
+                                        <li class="dropdown-items">
+                                            <a href="#">Fashsions</a>
+                                        </li>
+                                        <li class="dropdown-items">
+                                            <a href="#">Electronics</a>
+                                        </li>
+                                        <li class="dropdown-items">
+                                            <a href="#">Beauty</a>
+                                        </li>
+                                        <li class="dropdown-items">
+                                            <a href="#">Products</a>
+                                        </li>
+                                    </ul>
                     </li>
-                    <li><a href="#">BLOGS</a></li>
-                    <li><a href="#">ABOUT US</a></li>
-                    <li><a href="#">CONTACT US</a></li>
+                    <li class="menu_items"><a href="#">BLOGS</a></li>
+                    <li class="menu_items"><a href="#">ABOUT US</a></li>
+                    <li class="menu_items"><a href="#">CONTACT US</a></li>
                 </ul>
                 <!-- End of Menubar -->
                 <!-- Telephone -->

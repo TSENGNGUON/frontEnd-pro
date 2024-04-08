@@ -1,3 +1,38 @@
+
+
+
+
+
+
+
+
+
+
+const shopBtn = document.getElementById("shop_li");
+const pageBtn = document.getElementById("page_li");
+const iconShop = document.getElementById("shop_chevron");
+const iconPage = document.getElementById("page_chevron");
+const subShopMenu = document.querySelector(".dropdown-click_shop");
+const subPageMenu = document.querySelector(".dropdown-click_page");
+
+shopBtn.addEventListener("click",function(){
+    iconShop.classList.toggle("active");
+    subShopMenu.classList.toggle("active");
+})
+
+pageBtn.addEventListener("click",function(){
+    iconPage.classList.toggle("active");
+    subPageMenu.classList.toggle("active");
+})
+
+
+
+
+
+
+
+
+
 // Vue Js Code
 const app = Vue.createApp({
     data(){
@@ -45,6 +80,9 @@ for (item of listItems){
         }
     }
 }
+
+
+
 
 
 
