@@ -1,19 +1,17 @@
 
 
 
-
-
-
-
-
-
-
 const shopBtn = document.getElementById("shop_li");
 const pageBtn = document.getElementById("page_li");
 const iconShop = document.getElementById("shop_chevron");
 const iconPage = document.getElementById("page_chevron");
 const subShopMenu = document.querySelector(".dropdown-click_shop");
 const subPageMenu = document.querySelector(".dropdown-click_page");
+
+// Modal Buy Now
+var modalBuyNow = document.getElementById('id01');
+
+
 
 shopBtn.addEventListener("click",function(){
     iconShop.classList.toggle("active");
@@ -465,5 +463,8 @@ btnCategories.addEventListener("click",function(){
 
 })
 
-
-
+window.onclick = function(event) {
+    if(event.target == modalBuyNow){
+        modalBuyNow.style.display = "none";
+    }
+}

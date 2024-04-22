@@ -2965,6 +2965,122 @@ background-color:rgba(109, 18, 236, 0.9);
 
 
 
+/* mdoal buy now */
+.modal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0,0.5);
+    z-index: 99999;
+    overflow: auto;
+    display: none;
+
+}
+
+.modal-content {
+    text-align: center;
+    position: absolute;
+    z-index: 100;
+    background-color: var(--white);
+    width: 60%;
+    margin-top: 150px;
+    margin-left: 20%;
+    border: 1px solid #333333;
+}
+
+.modal-content .header{
+    width: 100%;
+    padding: 0 10px 0 0;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 35px;
+    color: #535353;
+}
+.modal-content .header .close:hover,
+.modal-content .header .close:focus{
+    color: red;
+}
+
+.main-right-left-side img{
+    width: 90%;
+}
+.main-right-left-side {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.main-right-left-side .left-side {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.right-side .header-modal {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start
+    ;
+}
+
+.header-modal .title{
+    padding-bottom: 10px;
+    color: orange;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.header-modal .price {
+    color: #535353;
+    font-size: large;
+    font-weight: 700;
+}
+
+.right-side .middle-modal{
+    padding: 20px 0 50px 0;
+}
+
+.modal-content .footer-modal{
+    padding-bottom: 40px;
+}
+
+.modal-content .footer-modal a{
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    color: #eeeeee;
+    background-color: #333333;
+    border-radius: 30px;
+    border: 0;
+}
+
+/* hover of button */
+.modal-content .footer-modal a:hover{
+    opacity: 0.8;
+}
+
+/* Add Zoom Animate */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+    from{-webkit-transform: scale(0);}
+    to{-webkit-transform: scale(1);}
+}
+
+@keyframes animatezoom {
+    from{transform: scale(0);}
+    to{transform: scale(1);}
+}
+
 /* Responsive */
 @media (min-width: 1200px) {
 

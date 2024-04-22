@@ -23,7 +23,37 @@
 </head>
 
 <body>
-    
+    <!-- modal buy now -->
+    <div id="id01" class="modal">
+        <form action="" class="modal-content animate">
+
+            <!-- header -->
+            <div class="header" ><span onclick="document.getElementById('id01').style.display = 'none'" class="close" title="Colse modal">&times;</span></div>
+            <div class="main-right-left-side">
+            <!-- left side -->
+            <div class="left-side">
+                <img src="../img/11.jpg" alt="">
+            </div>
+            <!-- end of left side -->
+            <!-- right side -->
+            <div class="right-side">
+                <div class="header-modal">
+                    <span class="title">Products</span>
+                    <span class="price">$93</span>
+                </div>
+                <hr>
+                <div class="middle-modal">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur maxime fugiat amet quam quae, quod vitae vel id illum rerum magnam praesentium assumenda atque repudiandae molestias nihil accusamus dignissimos blanditiis?
+                </div>
+                <div class="footer-modal">
+                    <a href="#">Buy now!</a>
+                </div>
+            </div>
+            <!-- end of right side -->
+            </div>
+        </form>
+    </div>
+    <!-- End of modal buy now -->
     <!-- Container -->
     <div class="container">
         <!-- Header Section -->
@@ -358,7 +388,7 @@
                                 <h4 class="title">
                                     PORTABLE SPEAKER
                                 </h4>
-                                <a href="#">BUY NOW</a>
+                                <a onclick="document.getElementById('id01').style.display = 'block'" href="#">BUY NOW</a>
                             </div>
                         </div>
                         <!-- Img Buy Now -->
@@ -374,7 +404,7 @@
                                     <span>Uder $350</span>
                                 </h4>
                             </div>
-                            <div class="btn"><a href="#">BUY NOW</a></div>
+                            <div class="btn"><a href="#" onclick="document.getElementById('id01').style.display = 'block'">BUY NOW</a></div>
                         </div>
                         <!-- Img Buy Now -->
                     </div>
@@ -389,7 +419,7 @@
                                     <span>SMART TV</span>
                                 </h4>
                             </div>
-                            <a href="#">BUY NOW</a>
+                            <a onclick="document.getElementById('id01').style.display = 'block'" href="#">BUY NOW</a>
                         </div>
                         <!-- Img Buy Now -->
                     </div>
@@ -509,7 +539,7 @@ EVER
                         </pre>
                         </div>
                         <div>
-                            <a href="#">GO SHOPPING</a>
+                            <a onclick="document.getElementById('id01').style.display = 'block'" href="#">GO SHOPPING</a>
                             <i class="fa-solid fa-chevron-right"></i>
                         </div>
                     </div>
