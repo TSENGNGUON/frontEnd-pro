@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    <title>Small Project</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Font Awsome -->
+    <link rel="stylesheet" href="../Font Awsome/css/all.min.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap Icon Link -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Link Vue Js-->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+
+<body>
+    <!-- modal buy now -->
+    <div id="id01" class="modal">
+        <form action="" class="modal-content animate">
+
+            <!-- header -->
+            <div class="header" ><span onclick="document.getElementById('id01').style.display = 'none'" class="close" title="Colse modal">&times;</span></div>
+            <div class="main-right-left-side">
+            <!-- left side -->
+            <div class="left-side">
+                <img src="../img/11.jpg" alt="">
+            </div>
+            <!-- end of left side -->
+            <!-- right side -->
+            <div class="right-side">
+                <div class="header-modal">
+                    <span class="title">Products</span>
+                    <span class="price">$93</span>
+                </div>
+                <hr>
+                <div class="middle-modal">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur maxime fugiat amet quam quae, quod vitae vel id illum rerum magnam praesentium assumenda atque repudiandae molestias nihil accusamus dignissimos blanditiis?
+                </div>
+                <div class="footer-modal">
+                    <a href="#">Buy now!</a>
+                </div>
+            </div>
+            <!-- end of right side -->
+            </div>
+        </form>
+    </div>
+    <!-- End of modal buy now -->
+    <!-- Container -->
+    <div class="container">
+        <!-- Header Section -->
+        <section class="header-section">
+            <!-- Content Header -->
+            <div class="content-header">
+                <!-- header left -->
+                <div class="header-left">
+                    <!-- Currency -->
+                    <div class="currency">
+                        <p>Currency:</p>
+                        <select id="currency">
+                            <option value="USD">USD</option>
+                            <option value="saab">Saab</option>
+                            <option value="vw">VW</option>
+                            <option value="audi" selected>Audi</option>
+                        </select>
+                        <p class="straight-line">|</p>
+                    </div>
+                    <!-- End of Currency -->
+                    <div class="lang">
+                        <p>Languge:</p>
+                        <select id="lang">
+                            <option value="volvo">EN</option>
+                            <option value="saab">Saab</option>
+                            <option value="vw">VW</option>
+                            <option value="audi" selected>Audi</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- End of header left -->
+                <!-- Header-right -->
+                <div class="header-right">
+                    <!-- Sign In -->
+                    <div class="sign-in">
+                        <a href="sign_in.html" target="_blank">Sign In</a>
+                    </div>
+                    <!-- End of Sign In -->
+                    <p class="straight-line">|</p>
+                    <!-- Create Acc -->
+                    <div class="create-acc">
+                        <a href="create_an_account.html" target="_blank">Create an Account</a>
+                    </div>
+                    <!-- End of Create Acc -->
+                </div>
+                <!-- End of Header-right -->
+            </div>
+            <!-- Content Header -->
+        </section>
+        <!-- End of Header Section -->
+        <!-- Search Section -->
+        <section class="search-section">
+            <!-- Search Content -->
+            <div class="content-search">
+                <!-- Logo -->
+                <a href="index.html" class="logo">VOLGA.</a>
+                <!-- End of Logo -->
+                <!-- Search Box -->
+                <div class="search-bar">
+                    <!-- dropdwon start -->
+                    <div class="dropdown">
+                        <div class="dropdown-text" id="dropdwon-text">
+                            <span id="span">All Categories</span>
+                            <i id="icon" class="fa-solid fa-chevron-down"></i>
+
+                        </div>
+                        <ul id="list" class="dropdown-list">
+                            <li class="dropdown-list-item">
+                                <a href="#">All Categories</a>
+                            </li>
+                            <li class="dropdown-list-item">
+                                <a href="#">Phone & Tablet</a>
+                            </li>
+                            <li class="dropdown-list-item">
+                                <a href="#">TV & Video</a>
+                            </li>
+                            <li class="dropdown-list-item">
+                                <a href="#">Electronics</a>
+                            </li>
+                            <li class="dropdown-list-item">
+                                <a href="#">Computer & Laptop</a>
+                            </li>
+                            <li class="dropdown-list-item">
+                                <a href="#">Fashions</a>
+                            </li>
+                            <li class="dropdown-list-item">
+                                <a href="#">Home & Kitchen</a>
+                            </li>
+                            <li class="dropdown-list-item">
+                                <a href="#">Beauty</a>
+                            </li>
+                            <li class="dropdown-list-item">
+                                <a href="#">Sport & Tourisim</a>
+                            </li>
+                            <li class="dropdown-list-item">
+                                <a href="#">Meat & Seafood</a>
+                            </li>
+                            <li class="dropdown-list-item">
+                                <a href="#">Fruit & Viggies</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <!-- dropdwon end -->
+
+                    <!-- search box input start -->
+                    <div class="searchh-box">
+                        <input type="text" id="search-input" placeholder="Search here...">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <!-- search box input end -->
+                </div>
+                <!-- End of Search Box -->
+                <!-- Icon -->
+                <div class="icon" id="app">
+                    <i v-on:click="countHeart++" class="fa-regular fa-heart"></i>
+                    <span>{{countHeart}}</span>
+                    <p>|</p>
+                    <i @click="countAddCart++" class="fa-solid fa-cart-shopping"></i>
+                    <span>{{countAddCart}}</span>
+                    <!-- My Cart -->
+                    <div class="my-cart">
+                        <p>My Cart</p>
+                        <p>$125.00</p>
+                    </div>
+                    <!-- End of My Cart -->
+                </div>
+                <!-- End of Icon -->
+
+            </div>
+            <!-- End of Search Content -->
+        </section>
+        <!-- End of Search Section -->
+        <!-- Navbar Section -->
+        <section class="navbar-section">
+            <!-- content-navbar -->
+            <div class="content-navbar">
+                <!-- Menubar -->
+                <ul class="menubar">
+                    <li class="menu_items"><a class="active" href="index.html">
+                            HOME
+                        </a>
+                    </li>
+                    <li class="shop menu_items"   
+                    id="shop_li"
+                    class="main-dropdown"><a class="dropdown-shop" href="#">SHOPS<i id="shop_chevron"
+                        class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-click_shop">
+                            <li class="dropdown-items">
+                                <a href="#phone-tablet"><pre>Phone and Tablets</pre></a>
+                            </li>
+                            <li class="dropdown-items">
+                                <a href="#tv">TV & Video</a>
+                            </li>
+                            <li class="dropdown-items">
+                                <a   href="#fashion  ">Fashsions</a>
+                            </li>
+                            <li class="dropdown-items">
+                                <a href="#elec">Electronics</a>
+                            </li>
+                            <li class="dropdown-items">
+                                <a href="#home-kitchen"><pre>Home & Kitchen</pre></a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    <li class="menu_items"
+                    id="page_li"
+                    class="main-dropdown-page page"><a href="#">PAGE<i id="page_chevron"
+                                    class="fa-solid fa-chevron-down"></i></a>
+                                    <ul class="dropdown-click_page">
+                                        
+                                        <li class="dropdown-items">
+                                            <a href="#">Fashsions</a>
+                                        </li>
+                                        <li class="dropdown-items">
+                                            <a href="#">Electronics</a>
+                                        </li>
+                                        <li class="dropdown-items">
+                                            <a href="#">Beauty</a>
+                                        </li>
+                                        <li class="dropdown-items">
+                                            <a href="#">Products</a>
+                                        </li>
+                                    </ul>
+                    </li>
+                    <li class="menu_items"><a href="#">BLOGS</a></li>
+                    <li class="menu_items"><a href="#">ABOUT US</a></li>
+                    <li class="menu_items"><a href="#">CONTACT US</a></li>
+                </ul>
+                <!-- End of Menubar -->
+                <!-- Telephone -->
+                <div class="telephone">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Hotline:</span>
+                    <p>+88 12 345 6789</p>
+                </div>
+                <!-- End of Telephone -->
+            </div>
+            <!-- End of content-navbar -->
+        </section>
+        <!-- End of Navbar Section -->
+
+
+        
+        <!-- Footer Search -->
+        <section class="footer-search">
+            <div class="content">
+                <div class="title">
+                    <span class="title-t">
+                        SIGN UP FOR NEWSLETTERS
+                    </span>
+                    <p class="title-b">
+                        Be the First to Know.Sign up for Newsletters
+                    </p>
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="Enter Your Email Address">
+                    <a href="#" target="_blank">SUBSCRIBE</a>
+                </div>
+            </div>
+        </section>
+        <!-- End of Footer Search -->
+        <!-- Footer -->
+        <section class="footer">
+            <div class="content">
+                <div class="col">
+                    <div class="title">
+                        CUSTOMER SERVICE
+                    </div>
+                    <ul class="link">
+                        <li><a href="#"><ion-icon name="chevron-forward-outline"></ion-icon> Contact Us</a></li>
+                        <li><a href="#"><ion-icon name="chevron-forward-outline"></ion-icon>Returns</a></li>
+                        <li><a href="#"><ion-icon name="chevron-forward-outline"></ion-icon>Orders History</a></li>
+                        <li><a href="#"><ion-icon name="chevron-forward-outline"></ion-icon>Site Map</a></li>
+                        <li><a href="#"><ion-icon name="chevron-forward-outline"></ion-icon>Testimonails</a></li>
+                        <li><a href="#"><ion-icon name="chevron-forward-outline"></ion-icon> My Acccout</a>
+                        <li><a href="#"><ion-icon name="chevron-forward-outline"></ion-icon>Unsubscribe Notification</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <div class="title">
+                        INFORMATION
+                    </div>
+                    <ul class="link">
+                        <li><a href="#"><ion-icon name="chevron-forward-outline"></ion-icon>About Us</a></li>
+                        <li><a href="#"><ion-icon name="chevron-forward-outline"></ion-icon>Delivery Information</a>
+                        </li>
+                        <li><a href="#"><ion-icon name="chevron-forward-outline"></ion-icon>Privatcy Policy</a></li>
+                        <li><a href="#"><ion-icon name="chevron-forward-outline"></ion-icon>Terms and Condition</a></li>
+                        <li><a href="#"><ion-icon name="chevron-forward-outline"></ion-icon>Warranty</a></li>
+                        <li><a href="#"><ion-icon name="chevron-forward-outline"></ion-icon>FAQ</a></li>
+                        <li><a href="#"><ion-icon name="chevron-forward-outline"></ion-icon>Seller Login</a></li>
+
+                    </ul>
+                </div>
+                <div class="col">
+                    <div class="title">
+                        EXTRAS
+                    </div>
+                    <ul class="link">
+                        <li><a href="#"><ion-icon name="chevron-forward-outline"></ion-icon>Brand</a></li>
+                        <li><a href="#"><ion-icon name="chevron-forward-outline"></ion-icon>Gift Vouchers</a></li>
+                        <li><a href="#"><ion-icon name="chevron-forward-outline"></ion-icon>Affiliate</a></li>
+                        <li><a href="#"><ion-icon name="chevron-forward-outline"></ion-icon>Wish List</a></li>
+                        <li><a href="#"><ion-icon name="chevron-forward-outline"></ion-icon>Order History</a></li>
+                        <li><a href="#"><ion-icon name="chevron-forward-outline"></ion-icon>Track Your Order </a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <div class="logo">
+                        <a href="#">VOLGA.</a>
+                    </div>
+                    <div class="text">
+                        We are a team of designers<br> and developers create high quality<br>
+                        Magento,Prestashop,Opencart
+                    </div>
+                    <div class="text-b">
+                        <span>Contact info:</span>
+                        <p>169-c,Technohub,Dubai Cilicon Oasass</p>
+                    </div>
+                    <div class="multi-icon">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                        <ion-icon name="logo-facebook"></ion-icon>
+                        <ion-icon name="logo-google"></ion-icon>
+                        <ion-icon name="logo-youtube"></ion-icon>
+                        <ion-icon name="logo-pinterest"></ion-icon>
+                        <ion-icon name="wifi-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Footer -->
+        <!-- Footer Brand -->
+        <div class="footer-brand">
+            <div class="content">
+                <ul class="title-brand">
+                    <li>
+                        <a href="#">Online Shopping |</a>
+                    </li>
+                    <li>
+                        <a href="#">Promotions |</a>
+                    </li>
+                    <li>
+                        <a href="#">My Orders |</a>
+                    </li>
+                    <li>
+                        <a href="#">Help |</a>
+                    </li>
+                    <li>
+                        <a href="#">Customer Service |</a>
+                    </li>
+                    <li>
+                        <a href="#">Support |</a>
+                    </li>
+                    <li>
+                        <a href="#">Most Popular |</a>
+                    </li>
+                    <li>
+                        <a href="#">New Arrivals |</a>
+                    </li>
+                    <li>
+                        <a href="#">Special Products |</a>
+                    </li>
+                    <li>
+                        <a href="#">Manufacturers |</a>
+                    </li>
+                    <li>
+                        <a href="#">Our Stores |</a>
+                    </li>
+                </ul>
+                <ul class="title-brand">
+                    <li>
+                        <a href="#">Shipping |</a>
+                    </li>
+                    <li>
+                        <a href="#">Payments |</a>
+                    </li>
+                    <li>
+                        <a href="#">Warrantee |</a>
+                    </li>
+                    <li>
+                        <a href="#">Refunds |</a>
+                    </li>
+                    <li>
+                        <a href="#">Checkouts |</a>
+                    </li>
+                    <li>
+                        <a href="#">Discount |</a>
+                    </li>
+                    <li>
+                        <a href="#">Term & Conditions |</a>
+                    </li>
+                    <li>
+                        <a href="#">Policy |</a>
+                    </li>
+                    <li>
+                        <a href="#">Shipping |</a>
+                    </li>
+                    <li>
+                        <a href="#">Payments |</a>
+                    </li>
+                    <li>
+                        <a href="#">Returns |</a>
+                    </li>
+                    <li>
+                        <a href="#">Refunds |</a>
+                    </li>
+                </ul>
+                <div class="logo-brand">
+                    <img src="../img/61.jpg" class="one">
+                    <img src="../img/62.jpg" class="two">
+                    <img src="../img/63.jpg" class="three">
+                    <img src="../img/64.jpg" class="four">
+                    <img src="../img/65.jpg" class="five">
+                    <img src="../img/66.jpg" class="six">
+                    <img src="../img/67.jpg" class="seven">
+                    <img src="../img/68.jpg" class="eight">
+                </div>
+            </div>
+        </div>
+        <!-- End of Footer Brand -->
+        <!-- Footer CopyRight -->
+        <section class="footer-cpyr">
+            <div class="content">
+                <div class="copyr">
+                    Copyright <i class="fa-regular fa-copyright"></i> 2024, <a href="#">nguon.com</a> All Right
+                    Reserved.
+                </div>
+                <ul class="menu-bar">
+                    <li>
+                        <a href="#">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="#">SHOP</a>
+                    </li>
+                    <li>
+                        <a href="#">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- End of Footer CopyRight -->
+
+    </div>
+    <!-- End of Container -->
+    <!-- Js Link -->
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
