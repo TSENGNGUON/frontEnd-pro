@@ -3081,6 +3081,44 @@ background-color:rgba(109, 18, 236, 0.9);
     to{transform: scale(1);}
 }
 
+
+/* Add to Cart Section */
+.modal_add_cart {
+    width: 900px;
+    max-width: 90vw;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+}
+svg{
+    width: 30px;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+header .icon-cart {
+    position: relative;
+}
+
+header .icon-cart span {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: -20px;
+
+}
+
 /* Responsive */
 @media (min-width: 1200px) {
 
